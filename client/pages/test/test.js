@@ -10,6 +10,7 @@ Template.test.helpers({
     {url: '/test/upload', title: 'Upload file'},
     {url: '/test/sortable', title: 'Sortable list'},
     {url: '/test/group', title: 'Player/Group'},
+    {url: '/test/testo', title: 'Coba'},
   ]
 });
 

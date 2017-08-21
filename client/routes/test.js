@@ -40,4 +40,9 @@ testRoutes.route('/group', {
   },
 });
 
+testRoutes.route('/testo', {
+  action: function(){
+    BlazeLayout.render('App_body', { main: 'testo'});
+  }
+})
 
