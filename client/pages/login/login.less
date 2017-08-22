@@ -47,7 +47,7 @@ background: -o-linear-gradient(top left, #ffff00 0%, #53e3a6 100%);
 background: linear-gradient(to bottom right, #ffff00 0%, #53e3a6 100%);
 	
 	position: absolute;
-	top: 50%;
+	top: 48%;
 	left: 0;
 	width: 100%;
 	height: 100%;
@@ -73,8 +73,8 @@ background: linear-gradient(to bottom right, #ffff00 0%, #53e3a6 100%);
 	h1{
 		font-size: 10px;
 		transition-duration: 1s;
-		transition-timing-function: ease-in-put;
-		font-weight: 200;
+		transition-timing-function: ease-in-out;
+		transition: width .35s ease-in-out;
 	}
 }
 
@@ -111,7 +111,7 @@ form{
 		
 		&:focus{
 			background-color: white;
-			width: 300px;
+			width: 610px;
 			
 			color: @prim;
 		}
