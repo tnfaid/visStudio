@@ -1,31 +1,8 @@
 <template name="App_login">
-  <div class="wrapper"> 
-  	<div class="container">
-  		<div class="form">
-		   {{> atForm}}
-		   {{#if currentUser}} 
-		    <button class="waves-effect waves-light btn"><i class="material-icons left">arrow_back</i>Logout</button>
-		   {{/if}} 
-		</div>
-   	</div>
-   	<ul class="bg-bubbles">
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-	</ul>
-   </div>
+    {{>atForm}}	
+    {{#if currentUser}}
+	    <button class="waves-effect waves-light btn"><i class="material-icons left">arrow_back</i>Logout</button>
+	{{/if}} 
 </template>
 
-<template name="myForm">
-	<form>
-		<!-- your form -->
-		<button id="button"> BUTTON </button>
-	</form>	
-</template>
+
