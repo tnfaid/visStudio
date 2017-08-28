@@ -10,20 +10,29 @@
       </ul>
 
       <div class="right hide-on-med-and-down" style="margin-right: 20px;">
-        <a href="test/login">Login</a> |
-        <a href="#">Sign Up</a>
-        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+        <a class="modal-trigger modal-close" href="#modal1">Login</a>
+        <!-- mobile mode -->
+        <a href="#" data-activates="mobile-demo">Login</a>
       </div>
 
+
       <!-- Modal Structure -->
-      <div id="modal1" class="modal modal-fixed-footer">
-        <div class="modal-content">
-          {{> App_login}}
+      <div class="container">
+        <div id="modal1" class="modal">
+          <!-- <div class="modal-content"> -->
+            {{> App_login}}
+          <!-- </div> -->
+          <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+          </div>
         </div>
-        <div class="modal-footer">
-          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+
+        <!-- mobile mode -->
+        <div id="mobile-demo">
+        {{> App_login}}
         </div>
       </div>
+      
 
     </div>
   </nav>
