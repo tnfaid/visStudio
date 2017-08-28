@@ -1,18 +1,13 @@
-var myLogoutFunt = function(){
-	FlowRouter.go('/');
-}
-
 Template.login.events({
   'click button'() {
     AccountsTemplates.logout();
-  },
+  }
 });
 
 AccountsTemplates.configure({
 	confirmPassword: false,
 	termsUrl: 'terms-of-use',
-	privacyUrl:'privacy',
-	onLogoutHook: myLogoutFunt
+	privacyUrl:'privacy'
 })
 
 AccountsTemplates.addFields([
