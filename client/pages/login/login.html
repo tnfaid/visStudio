@@ -1,12 +1,12 @@
 <template name="App_login">
-	<div class="form container">
-		<div class="col s12 m4 l8">
+	<div class="login">
+		<form class="login-container">
 			{{>atForm}}	
-		    {{#if currentUser}}
-			    <button class="waves-effect waves-light btn"><i class="material-icons left">arrow_back</i>Logout</button>
-			{{/if}} 
-		</div>
-	</div>
+			{{#if currentUser}}
+				<button class="waves-effect waves-light btn"><i class="material-icons left">arrow_back</i>Logout</button>
+			{{/if}}
+		</form>
+	</div>	 
 </template>
 
 <!-- 
