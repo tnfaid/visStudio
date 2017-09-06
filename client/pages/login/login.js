@@ -1,4 +1,4 @@
-Template.login.events({
+Template.App_login.events({
   'click button'() {
     AccountsTemplates.logout();
   }
@@ -34,3 +34,8 @@ AccountsTemplates.addFields([
   	]
   }
 ]);
+
+Template.App_login.onRendered(function(){
+  $('.modal').modal();
+  $(".button-collapse").sideNav();
+});

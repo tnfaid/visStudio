@@ -1,24 +1,21 @@
 <template name="App_login">
-	<div class="login">
-			{{>atForm}}	
-			{{#if currentUser}}
-				<button class="waves-effect waves-light btn"><i class="material-icons left">arrow_back</i>Logout</button>
-			{{/if}}
-	</div>	 
+<!-- <div class="container"> -->
+	<div id="login" class="signin-card" style="max-width: 350px; padding: none">
+		<div class="logo-image">
+			<img src="http://www.officialpsds.com/images/thumbs/Spiderman-Logo-psd59240.png" alt="Logo" title="Logo" width="138">
+		</div>
+	  	<p class="subhead">Login Web</p>
+	  	<form action="" method="" class="" role="form">
+		    {{>atForm}}
+		</form>
+    </div>
+<!-- </div> -->
+    <!-- {{#visibleXs}}
+        {{> App_login_mobile}}
+    {{/visibleXs}}
+    {{#hiddenXs}}
+        {{> App_login_web}}
+    {{/hiddenXs}} -->
 </template>
 
-<!-- 
-<template name="login">
-	<div class="modal fade">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-body">
-					<div id="login" class="form-signin">
-						{{>atForm}}
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</template> -->
 
