@@ -11,14 +11,6 @@ AccountsTemplates.configure({
 })
 
 AccountsTemplates.addFields([
- {
-  	_id: 'firstName',
-  	type: 'text',
-  	display: 'First Name',
-  	required: true,
-  	re: /(?=.*[a-z])(?=.*[A-Z])/,
-  	errStr: '1 lowercase and 1 uppercase letter required'
-  },
   {
   	_id: 'gender',
   	type: 'select',
