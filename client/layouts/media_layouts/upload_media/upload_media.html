@@ -1,6 +1,8 @@
 <template name="upload_media">
-<div class="row mar">
-  <div class="col s6">
+<div class="container">
+
+  <div class="row">
+  <div class="col s12 m12 l12">
     <div class="card">
       <ul class="collection with-header">
         <li class="collection-header mar"><h4>Upload Image</h4></li>
@@ -8,44 +10,57 @@
       </ul>
     </div>
   </div>
+  </div>
 
-  <div class="col s6">
+  <div class="row">
+  <div class="col s12 m12 l12">
     <div class="card">
       <ul class="collection with-header">
         <li class="collection-header"><h4>List Image</h4></li>
-            {{> file_media}}
-          </ul>
+          <table class="responsive-table center-align bordered">
+            <thead>
+              <ul>
+                <li class="col s12 m6 l3">Avatar</li>
+                <li class="col s12 m6 l3">Name File</li>
+                <li class="col s12 m6 l3">Action</li>
+              </ul>
+            </table>
+          </table>
+            <!-- {{> file_media}} -->
+      </ul>
     </div>
-  </div>          
+  </div>  
+  </div>
+  
 </div>
 </template>
 
-<template name='file_media'>
+<template name="file_media">
   <div class="row">
-    
       <table class="responsive-table center-align bordered">
         <thead>
           <tr>
-            <th class="col s12 m4 l2">Avatar</th>
-            <th class="col s12 m4 l5">Name File</th>
-            <th class="col s12 m4 l3">Action</th>
+            <th class="col s12 m6 l3">Avatar</th>
+            <th class="col s12 m6 l3">Name File</th>
+            <th class="col s12 m6 l3">Action</th>
+          </tr>
+          <tr>
+            
           </tr>
         </thead>
         <tbody>
           {{#each file}}
-            <tr>
-                <td class="col s12 m12 l2"><img src="{{images}}" alt="images" class="circle responsive-img"></td>
+            <!-- <tr>
+                <td class="col s12 m12 l2">{{_id}}</td>
                 <td class="col s12 m12 l5">{{name}}</td>
                 <td class="col s12 m12 l3">
                     <a class="collection-item btn btn-primary" href="{{link}}?download=true" download="{{name}}" target="_parent" type="{{type}}"><i class="material-icons">file_download</i></a>
-                    <a class="waves-effect btn delete" ><i class="material-icons">delete</i></a>
+                    <button id="delete">remove</button>
                 </td>
-            </tr>
+            </tr> -->
             {{/each}} 
         </tbody> 
-      </table>
-    
-    
+      </table>    
   </div>
 </template>
 

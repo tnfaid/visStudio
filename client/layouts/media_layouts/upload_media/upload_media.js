@@ -1,5 +1,5 @@
+
 // download ===================================
-// PlayerList = new Mongo.collection('player');
 
 Template.upload_media.onCreated(function () {
   Meteor.subscribe('files.images.all');
@@ -10,6 +10,12 @@ Template.file_media.helpers({
     return Images.find();
   }
 });
+
+// Template.file_media.events({
+//   'click .delete': function(){
+//     file_media.remove(this._id);
+//   }
+// });
 
 // upload ===================================
 Template.uploadForm_media.onCreated(function () {
@@ -50,3 +56,11 @@ Template.uploadForm_media.events({
     }
   }
 });
+
+
+
+// Meteor.methods({
+//   deleteImage: function(removeId){
+//     return FoodCategory.remove(removeId);
+//   }
+// });
