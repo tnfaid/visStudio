@@ -9,6 +9,9 @@
 	  	<p class="subhead">Mobile version</p>
 	  	<form action="" method="" class="" role="form">
 		    {{>atForm}}
+		    {{#if currentUser}} 
+		        <button class="waves-effect waves-light btn"><i class="material-icons left">arrow_back</i>Logout</button>
+		    {{/if}} 
 		</form>
     </div>
 </div>

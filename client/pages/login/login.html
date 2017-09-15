@@ -8,7 +8,12 @@
 	  	<br>
 	  	<form action="" method="" class="" role="form">
 		    {{>atForm}}
+		    {{#if currentUser}} 
+		     	<button class="waves-effect waves-light btn"><i class="material-icons left">arrow_back</i>Logout</button>
+		    {{/if}} 
 		</form>
+		<br>
+		<br>
     </div>
 <!-- </div> -->
     <!-- {{#visibleXs}}
