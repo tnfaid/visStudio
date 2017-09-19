@@ -1,6 +1,6 @@
 ## 1. Login Form
 
-> for test, type this in URL after running the meteor file **localhost:3000/single_layouts**, and there is some file that related with login form
+> for test, type [this in URL](localhost:3000/single_layouts) after running the meteor file, and there is some file that related with login form
 
 1.1	 UI header - location *client/layout/single_layouts/single_header.html*
 
