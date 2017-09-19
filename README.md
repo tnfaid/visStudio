@@ -1,4 +1,4 @@
-##Login Form
+<!-- ##Login Form
 1.for test type 'localhost:3000/single_layouts', and there are some included file for login form
 1.1	UI header 'client/layout/single_layouts/single_header.html'
 	- line 6-10 for web layout menu, and form login using modal in line 22-24
@@ -8,3 +8,6 @@
 	- login.html is layout for web mode
 	- login_mobile.html is layout for mobile mode
 	- routes file location in 'client/routes/login.js' 
+ -->
+
+ *italic*
