@@ -9,21 +9,15 @@
 	  	<p class="subhead">Login Web</p>
 	  	<br>
 	  	<form action="" method="" class="" role="form">
-		    {{>atForm}}
-		    {{#if currentUser}} 
-		     	<button class="waves-effect waves-light btn"><i class="material-icons left">arrow_back</i>Logout</button>
-		    {{/if}} 
+		    {{>atForm}} 
 		</form>
 		<br>
 		<br>
     </div>
-<!-- </div> -->
-    <!-- {{#visibleXs}}
-        {{> App_login_mobile}}
-    {{/visibleXs}}
-    {{#hiddenXs}}
-        {{> App_login_web}}
-    {{/hiddenXs}} -->
+    {{#if currentUser}} 
+       {{> profile_show}}
+		<button class="waves-effect waves-light btn"><i class="material-icons left">arrow_back</i>Logout</button>
+    {{/if}} 
 </template>
 
 

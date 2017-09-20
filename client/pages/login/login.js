@@ -1,3 +1,8 @@
+var myLogoutFunc = function(){
+  console.log('testo hai');
+};
+
+
 Template.App_login.events({
   'click button'() {
     AccountsTemplates.logout();
@@ -7,7 +12,9 @@ Template.App_login.events({
 AccountsTemplates.configure({
 	confirmPassword: false,
 	termsUrl: 'terms-of-use',
-	privacyUrl:'privacy'
+	privacyUrl:'privacy',
+  homeRoutePath : 'profile_show',//route to home
+  onLogoutHook : myLogoutFunc
 })
 
 AccountsTemplates.addFields([
