@@ -1,0 +1,49 @@
+<template name="header_profile">
+	<nav class="nav-extended z-depth-4">
+    {{> tabs_media_profile}}
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Logo</a>
+      {{> menu_header_profile}}
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+      </ul>
+    </div>
+  </nav>
+</template>
+
+<template name="menu_header_profile">
+  <!-- Dropdown Structure -->
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="#!"><i class="material-icons left">settings</i>Edit
+  Profile</a></li>
+    <li><a href="#!">two</a></li>
+    <li class="divider"></li>
+    <li><a href="#!"><i class="material-icons
+  left">power_settings_new</i>Logout</a></li>
+  </ul>
+
+    <div class="nav-wrapper menu-header">
+      <a href="#" data-activates="mobile-demo"
+  class="button-collapse"><i class="material-icons">menu</i></a>
+      <a class="dropdown-button" href="#!"
+  data-activates="dropdown1">User<i class="material-icons
+  right">more_vert</i></a>
+    </div>
+</template>
+
+<template name="tabs_media_profile">
+  <ul id="slide-out" class="side-nav fixed">
+      <li>
+          <a class="tooltipped" data-position="right" data-delay="50" data-tooltip="Media" href="#!">
+              <i class="medium material-icons">camera_alt</i>
+          </a>
+      </li>
+      <li>
+          <a class="tooltipped" data-position="right" data-delay="50" data-tooltip="Playlist" href="#!">
+              <i class="medium material-icons">camera</i>
+          </a>
+      </li>
+  </ul>
+</template>
