@@ -1,8 +1,6 @@
 <!-- {{> single_header}} -->
 <template name="App_login">
-<!-- <div class="container"> -->
-	<!-- {{> single_header}} -->
-	<div id="login" class="signin-card web">
+    <div id="login" class="signin-card web">
 		<div class="logo-image">
 			
 		</div>
@@ -14,10 +12,28 @@
 		<br>
 		<br>
     </div>
-    {{#if currentUser}} 
+
+    <!-- {{#if currentUser}} 
        {{> profile_show}}
+       {{> user}}
+       {{> Template.dynamic template=main}}
+    {{else}}
+    	{{#if logginIn}}
+    		{{> layouts_media}}
+    	{{else}}
+    		{{> header_1}}
+    		{{> layouts_media}}
+    	{{/if}}
 		<button class="waves-effect waves-light btn"><i class="material-icons left">arrow_back</i>Logout</button>
-    {{/if}} 
+    	
+    {{/if}}  -->
 </template>
+
+
+<template name="loginMobile">
+
+</template>
+
+
 
 

@@ -1,7 +1,11 @@
 var myLogoutFunc = function(){
-  console.log('testo hai');
+  FlowRouter.go('/single_layouts');
 };
 
+Template.single_header.onRendered(function(){
+    $('.modal').modal();
+    $(".button-collapse").sideNav();
+});
 
 Template.App_login.events({
   'click button'() {
@@ -14,7 +18,7 @@ AccountsTemplates.configure({
 	termsUrl: 'terms-of-use',
 	privacyUrl:'privacy',
   homeRoutePath : 'profile_show',//route to home
-  onLogoutHook : myLogoutFunc
+  onLogoutHook : myLogoutFunc,
 })
 
 AccountsTemplates.addFields([
